@@ -1,75 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: Raleway, sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Raleway, sans-serif;
 }
 
 
 header {
-    background-color: #402940;
+  background-color: #402940;
 
 }
 
 header h1 {
-    color: #F8B380;
-    font-family: Playfair Display, serif;
-    font-size: 50px;
-    text-align: center;
-    padding: 50px 10px 50px 10px;
-    margin: 0px;
+  color: #F8B380;
+  font-family: Playfair Display, serif;
+  font-size: 50px;
+  text-align: center;
+  padding: 50px 10px 50px 10px;
+  margin: 0px;
 }
 
 
 /* tavallinen teksti */
 section {
-    width: 90%;
-    margin: auto;
-    font-size: 20px;
-    text-align: center;
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
 
 }
 
 /* kuva */
 section img {
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    width: 40%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 40%;
 }
 
 .listat {
-    width: 90%;
-    margin: auto;
-    font-size: 18px;
-    text-align: center;    
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
 }
 
 
 ul.myUL {
-    display: inline-block;
-    text-align: left;
-  }
+  display: inline-block;
+  text-align: left;
+}
 
 footer {
 
-    background-color: #402940;
-    width: 100%;
- 
+  background-color: #402940;
+  width: 100%;
+
 }
 
 footer p {
-    color: #F8B380;
-    font-size: 10px;
-    text-align: right;
-    padding: 10px;
-    margin: 0px;
+  color: #F8B380;
+  font-size: 12px;
+  text-align: right;
+  padding: 10px;
+  margin: 0px;
 
 }
 
 #valikko {
-list-style-type: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -81,77 +83,84 @@ list-style-type: none;
 }
 
 #valikko li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 #valikko li a:hover:not(.active) {
-    background-color: #CFBD73;
-  }
+  background-color: #CFBD73;
+}
 
- #valikko .active {
-    background-color: #F8B380;
-  }
+#valikko .active {
+  background-color: #F8B380;
+}
 
-  .column{
-    width: 90%;
-    margin: auto;
-    font-size: 18px;
-    text-align: center;  
-  }
+.column {
+  width: 90%;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
 
-  .divider {
-    border: none; /* Poistaa oletusarvoisen viivan */
-    border-top: 2px solid #402940; /* Lisää mukautetun viivan */
-    margin: 40px 0; /* Tilaa viivan ylä- ja alapuolelle */
-    width: 80%; /* Viivan leveys suhteessa sisältöön */
-    margin-left: auto;
-    margin-right: auto;
+.divider {
+  border: none;
+  /* Poistaa oletusarvoisen viivan */
+  border-top: 2px solid #402940;
+  /* Lisää mukautetun viivan */
+  margin: 40px 0;
+  /* Tilaa viivan ylä- ja alapuolelle */
+  width: 80%;
+  /* Viivan leveys suhteessa sisältöön */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 @media only screen and (min-width: 650px) {
-    section {
-      width: 75%
-    }
-
-    .listat {
-        width: 75%;
-    }
-
-    #valikko li {
-        float: left;
-      }
-
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        box-sizing: border-box; /* Lisää box-sizing, jotta padding ei sotke leveyttä */
-    }
-
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
+  section {
+    width: 75%
   }
+
+  .listat {
+    width: 75%;
+  }
+
+  #valikko li {
+    float: left;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Lisää box-sizing, jotta padding ei sotke leveyttä */
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
 
 @media only screen and (min-width: 1025px) {
-    section {
-      width: 55%
-    }
-    .header h1 {
-        padding: 80px 10px 80px 10px;
-        font-size: 70px;
-    }
-    .listat {
-        width: 55%;
-    }
-
-   
+  section {
+    width: 55%
   }
+
+  .header h1 {
+    padding: 80px 10px 80px 10px;
+    font-size: 70px;
+  }
+
+  .listat {
+    width: 55%;
+  }
+
+
+}
